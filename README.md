@@ -1,3 +1,7 @@
+# TODO
+- [ ] font style for Chinese and English
+- [ ] use mardown style
+
 # Reformat-Text-for-Clips
 
 + Main function: Help to reformat text.
