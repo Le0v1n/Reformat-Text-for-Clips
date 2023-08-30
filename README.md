@@ -2,6 +2,9 @@
 - [ ] font style for Chinese and English
 - [ ] use mardown style
 
+# Bugs
++ 4.1 -> 4. 1
+
 # Reformat-Text-for-Clips
 
 + Main function: Help to reformat text.
