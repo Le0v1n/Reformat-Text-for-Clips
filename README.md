@@ -29,5 +29,5 @@ pyinstaller --onefile --noconsole --icon icon.ico reformat-text-for-clips.py
 
 Welcome to contact me if there are any bugs.
 
-[联系我](mailto:zjkljd@163.com)
-[Contact me](mailto:zjkljd@163.com)
++ [联系我](mailto:zjkljd@163.com)
++ [Contact me](mailto:zjkljd@163.com)
