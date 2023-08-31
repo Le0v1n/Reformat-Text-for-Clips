@@ -10,7 +10,7 @@
 - [x] 新增 `create_exe_file.sh`，可以使用该脚本生成快速生成 `.ext` 文件 [ver 1.0 -> ver 1.1]☘️
 - [x] 新增 `requirements.txt`，可以快速安装所需第三方库 -> `pip install -r requirements.txt` [ver 1.0 -> ver 1.1]☘️
 - [x] 新增 Apache License [ver 1.0 -> ver 1.1]☘️
-- [x] 发布 `reformat-text-for-clips-ver-1.1.exe`版本
+- [x] 发布 `reformat-text-for-clips-ver-1.1.exe` 版本☘️
 
 # 😒TODO
 - [x] 修改字体，为中文和英文应用不同的字体
