@@ -19,6 +19,7 @@
 # :b:Bugs
 - [x] `数字.数字`的形式会在 `.` 后面加空格，如：`4.1 -> 4. 1` [ver 1.0 -> ver 1.1]
 - [x] 如果有两行，会把换行符删除 [ver 1.0 -> ver 1.1]
+- [ ] 使用 \`\` 包围的代码中如果出现 `.字母`，会在 `.` 后添加空格
 
 # 🥰Introduction
 
@@ -84,11 +85,13 @@ Here are explanations for the text formatting rules:
 
 # :warning:Note
 
-If your screen resolution is greater than 1920x1080, you may encounter low text resolution issues when using this software. In such cases, you need to right-click the `reformat-text-for-clips.exe` file -> Properties -> Compatibility -> Change high DPI settings -> Check 'Override high DPI scaling behavior (Application)'.
++ If your screen resolution is greater than 1920x1080, you may encounter low text resolution issues when using this software. In such cases, you need to right-click the `reformat-text-for-clips.exe` file -> Properties -> Compatibility -> Change high DPI settings -> Check 'Override high DPI scaling behavior (Application)'.
++ 360 Security Guard may trigger a false positive. You can add it to the trusted list. If you're still concerned, you can inspect the code or generate the `.exe` program yourself.
 
 ---
 
-如果你的屏幕大于 1920×1080，那么在使用本软件时可能会出现文字分辨率低的问题。此时你需要右键 `.exe` 文件 -> 属性 -> 兼容性 -> 更改高 DPI 设置 -> 勾选替代高 DPI 缩放行为（应用程序）。
++ 如果你的屏幕大于 1920×1080，那么在使用本软件时可能会出现文字分辨率低的问题。此时你需要右键 `.exe` 文件 -> 属性 -> 兼容性 -> 更改高 DPI 设置 -> 勾选替代高 DPI 缩放行为（应用程序）；
++ 360 安全卫士可能会报毒，添加信任即可。如果不放心，可自行检查代码或自行生成 `.exe` 程序。
 
 
 # :e-mail:Contact me
