@@ -7,9 +7,12 @@ import pyperclip
 def format_text(input_text):
     # 保留换行符，将换行符替换为占位符
     input_text = input_text.replace('\n', '<<newline>>')
+    
+    # 在反引号内的文本两侧添加空格
+    formatted_text = re.sub(r'`([^`]+)`', r' `\1` ', input_text)
 
     # 添加中英文之间空格、标点符号空格、数字与中文之间空格
-    formatted_text = re.sub(r'(?<=[\u4e00-\u9fa5])(?=[a-zA-Z0-9])|(?<=[a-zA-Z0-9])(?=[\u4e00-\u9fa5])|(?<=[\u4e00-\u9fa5])(?=[.,;!?])|(?<=[.,;!?])(?=[\u4e00-\u9fa5])|(?<=[0-9])(?=[\u4e00-\u9fa5])|(?<=[\u4e00-\u9fa5])(?=[0-9])', ' ', input_text)
+    formatted_text = re.sub(r'(?<=[\u4e00-\u9fa5])(?=[a-zA-Z0-9])|(?<=[a-zA-Z0-9])(?=[\u4e00-\u9fa5])|(?<=[\u4e00-\u9fa5])(?=[.,;!?])|(?<=[.,;!?])(?=[\u4e00-\u9fa5])|(?<=[0-9])(?=[\u4e00-\u9fa5])|(?<=[\u4e00-\u9fa5])(?=[0-9])', ' ', formatted_text)
 
     # 删除中文与中文之间多余的空格
     formatted_text = re.sub(r'(?<=[\u4e00-\u9fa5])\s+(?=[\u4e00-\u9fa5])', '', formatted_text)
@@ -20,7 +23,7 @@ def format_text(input_text):
     # 在英文标点后添加一个空格，删除多余的空格，但排除阿拉伯数字前后的句点
     formatted_text = re.sub(r'([.,;!?]+)(?=[a-zA-Z0-9])', r'\1 ', formatted_text)
     formatted_text = re.sub(r'([.,;!?]+)(?=[^0-9])', r'\1', formatted_text)
-    
+
     # 删除英文标点后多余的空格，只保留一个空格
     formatted_text = re.sub(r'([.,;!?]+)\s*', r'\1 ', formatted_text)
 
@@ -34,6 +37,7 @@ def format_text(input_text):
     formatted_text = formatted_text.replace('<<newline>>', '\n')
 
     return formatted_text
+
 
 def convert_text():
     input_text = text_input.get("1.0", "end-1c")  # 获取文本框中的文本
@@ -56,7 +60,7 @@ def convert_and_copy():
 
 # 创建GUI窗口
 window = tk.Tk()
-window.title("Reformat Text for Clips ver1.0")
+window.title("Reformat Text for Clips ver1.2")
 
 # 创建一个自定义字体对象，用于中文和英文
 chinese_font = font.Font(family="新宋体", size=14)
@@ -66,7 +70,7 @@ english_font = font.Font(family="Times New Roman", size=14)
 window.option_add("*Font", chinese_font)
 
 # 创建作者信息标签
-author_label = tk.Label(window, text="Author：Le0v1n [ver 1.1]\nContact me：zjkljd@163.com", justify="left")
+author_label = tk.Label(window, text="Author：Le0v1n [ver 1.2]\nContact me：zjkljd@163.com", justify="left")
 author_label.config(font=english_font)
 author_label.pack()
 
