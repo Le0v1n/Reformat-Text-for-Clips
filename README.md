@@ -11,6 +11,7 @@
 - [x] 新增 `requirements.txt`，可以快速安装所需第三方库 -> `pip install -r requirements.txt` [ver 1.0 -> ver 1.1]☘️
 - [x] 新增 Apache License [ver 1.0 -> ver 1.1]☘️
 - [x] 发布 `reformat-text-for-clips-ver-1.1.exe` 版本☘️
+- [x] 新增 `内容` 前后添加空格的规则
 
 # 😒TODO
 - [x] 修改字体，为中文和英文应用不同的字体
@@ -19,7 +20,7 @@
 # :b:Bugs
 - [x] `数字.数字`的形式会在 `.` 后面加空格，如：`4.1 -> 4. 1` [ver 1.0 -> ver 1.1]
 - [x] 如果有两行，会把换行符删除 [ver 1.0 -> ver 1.1]
-- [ ] 使用 \`\` 包围的代码中如果出现 `.字母`，会在 `.` 后添加空格
+- [x] 使用 \`\` 包围的代码中如果出现 `.字母`，会在 `.` 后添加空格
 
 # 🥰Introduction
 
